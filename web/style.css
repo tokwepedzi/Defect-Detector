@@ -1,0 +1,82 @@
+:root {
+  --white_chocolate: #ece5dd;
+  --color-deep-black: #000000;
+  --color-ufo-green: #25d366;
+  --color-warning: #ffce31;
+  --color-primary: #d34115;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  align-items: center;
+  background: var(--white_chocolate);
+}
+.wrapper {
+  width: 450px;
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.wrapper h2 {
+  margin-bottom: 5px;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+form {
+  display: flex;
+  border: 2px solid var(--color-primary);
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+form i {
+  font-size: 45px;
+  color: var(--color-ufo-green);
+}
+
+.upload-file {
+  padding: 10px 0;
+  font-size: 15px;
+}
+
+.upload-file i {
+  color: var(--color-warning);
+  text-shadow: black;
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.content {
+  margin-top: 3px;
+  width: 100%;
+}
+
+.content div {
+  display: flex;
+}
+.content div span:first-child {
+  flex-grow: 1;
+}
+
+.progress-bar {
+  height: 4px;
+  margin-top: 5px;
+  background: var(--color-primary);
+}
+
+uploaded {
+  max-height: 220px;
+  overflow-y: auto;
+}
